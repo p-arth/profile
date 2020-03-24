@@ -17,7 +17,10 @@
   <body>
     <div class="banner">
         <h1 class="banner-text">
-         <span id="typed"></span>
+          <div id="typed-strings">
+            <p>Improving <strong>life</strong><br>through <em style="text-decoration: underline; color: #7053c6;">code</em>.</p>
+          </div>
+          <span id="typed"></span>
         </h1>
     </div>
 
@@ -122,8 +125,8 @@
 
 <script>
   const typed = new Typed('#typed', {
-    strings: ['Improving <strong>life</strong><br>through <em style="text-decoration: underline; color: #7053c6;">code</em>.'
-    ],
+    stringsElement: '#typed-strings'
+    ,
     typeSpeed: 100
   });
 </script>
